@@ -1,7 +1,7 @@
 import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs";
 
-export abstract class ApiGateway {
+export abstract class HttpGateway {
     constructor(protected http: HttpClient) { }
 
     abstract get baseUrl(): any;

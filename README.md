@@ -47,6 +47,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - Scroll to the top when an element with the 'a' tag or the 'appScrollTop' directive is clicked.
   - [ScrollTopDirective](src/app/shared/directives/scroll-top.directive.ts)
 
+- `evironments(.prod).ts`, `http connection`
+  - [evironments](src/environments)
+  - [ApiService](src/app/shared/services/api.service.ts)
+
 - Some example components
   - [Input - FormControl](src/app/shared/components/form-controls/input/input.component.ts)
   - [Table](src/app/features/feature1/pages/page1)
