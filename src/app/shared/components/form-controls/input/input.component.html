@@ -1,0 +1,16 @@
+<div class="field">
+    <label class="label">{{ label }}</label>
+    <div class="control has-icons-right" [ngClass]="{ 'has-icons-left' : icon != null }">
+        <input class="input" [ngClass]="status.clazz" [type]="type" placeholder="number input"
+            [formControl]="valueFormControl">
+        <span class="icon is-small is-left">
+            <i [class]="icon"></i>
+        </span>
+        <span class="icon is-small is-right">
+            <i [ngClass]="status.icon"></i>
+        </span>
+    </div>
+    <p class="help" [ngClass]="status.clazz">
+        {{ status.message }}
+    </p>
+</div>

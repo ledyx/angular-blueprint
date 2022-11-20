@@ -1,0 +1,21 @@
+<div class="table-container">
+    <table class="table is-striped is-narrow is-hoverable is-fullwidth">
+        <thead>
+            <tr>
+                <th>Email</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Sign up date</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let item of body">
+                <td>{{ item.email }}</td>
+                <td>{{ item.name }}</td>
+                <td>{{ item.department }}</td>
+                <td>{{ formatDate(item.date) }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

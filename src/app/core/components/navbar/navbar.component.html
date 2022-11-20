@@ -1,0 +1,55 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <!-- <a class="navbar-item" href="/"> -->
+      <a class="navbar-item" [routerLink]="[ '' ]">
+        <img src="assets/images/logo.png" width="112" height="28">
+      </a>
+  
+      <a role="button" class="navbar-burger" [ngClass]="{ 'is-active' : isActive }" aria-label="menu" aria-expanded="false" (click)="toggle()">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div class="navbar-menu" [ngClass]="{ 'is-active' : isActive }">
+      <div class="navbar-start">
+  
+        <a class="navbar-item" [routerLink]="[ 'feature1' ]" routerLinkActive="is-menu-active">
+          feature1
+        </a>
+  
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More
+          </a>
+  
+          <div class="navbar-dropdown">
+            <a class="navbar-item">
+              item1
+            </a>
+            <a class="navbar-item">
+              item2
+            </a>
+            <hr class="navbar-divider">
+            <a class="navbar-item">
+              item3
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary">
+              <strong>Sign up</strong>
+            </a>
+            <a class="button is-light">
+              Log in
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>

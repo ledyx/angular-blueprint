@@ -1,0 +1,23 @@
+<div class="columns">
+    <div class="column is-3">
+        <div class="menu">
+
+            <a class="menu-label">
+                Pages
+            </a>
+
+            <ul class="menu-list">
+                <li>
+                    <a [routerLink]="'page1'" routerLinkActive="is-active">Page1</a>
+                </li>
+                <li>
+                    <a [routerLink]="'page2'" routerLinkActive="is-active">Page2</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="column">
+        <router-outlet></router-outlet>
+    </div>
+</div>
