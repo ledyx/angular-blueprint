@@ -4,17 +4,20 @@ import { LoadingComponent } from './components/loading/loading.component';
 import { InputComponent } from './components/form-controls/input/input.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ScrollTopDirective } from './directives/scroll-top.directive';
+import { CardModalComponent } from './components/modal/card-modal/card-modal.component';
 
 @NgModule({
   declarations: [
     LoadingComponent,
     InputComponent,
-    ScrollTopDirective
+    ScrollTopDirective,
+    CardModalComponent
   ],
   exports: [
     LoadingComponent,
     InputComponent,
-    ScrollTopDirective
+    ScrollTopDirective,
+    CardModalComponent
   ],
   imports: [
     CommonModule,

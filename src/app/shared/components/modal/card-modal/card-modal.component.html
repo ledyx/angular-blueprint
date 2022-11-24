@@ -1,0 +1,21 @@
+<div class="modal" [ngClass]="{'is-active': status}">
+    <div class="modal-background" (click)="close()"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">{{ title }}</p>
+            <button class="delete" aria-label="close" (click)="close()"></button>
+        </header>
+        <section class="modal-card-body" *ngIf="content != null">
+            {{ content }}
+        </section>
+        <footer class="modal-card-foot">
+            <ng-container *ngFor="let button of buttons;let i=index">
+                <button type="button" class="button" [ngClass]="button.clazz"
+                [attr.disabled]="button.disabled"
+                (click)="executeCallback(i)">
+                    {{ button.text }}
+                </button>
+            </ng-container>
+        </footer>
+    </div>
+</div>

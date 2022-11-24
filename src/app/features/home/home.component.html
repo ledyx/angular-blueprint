@@ -6,3 +6,12 @@
         Show ({{ inputValue }}sec)
     </button>
 </div>
+
+<div class="mt-6">
+    <app-card-modal [(status)]="modalStatus"
+    [content]="'test'"></app-card-modal>
+    <button type="button" class="button is-primary is-fullwidth"
+    (click)="modalStatus = true">
+        Show Modal
+    </button>
+</div>

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
-import { HttpGateway as HttpGateway } from './api-service';
+import { HttpGateway as HttpGateway } from './http.gateway';
 import { environment } from 'src/environments/environment';
 
 @Injectable({
